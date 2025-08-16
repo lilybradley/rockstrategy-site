@@ -256,17 +256,14 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 html, body {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px; 
   /* keep existing base sizes from W3; no change needed */
 }
 
 /* Headings use Montserrat for a clean, modern, geometric look */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "DM Sans", "Helvetica Neue", Arial, sans-serif;
-  /* W3 sets 400 by default; bump key levels a bit for hierarchy */
-  font-weight: 500;
-}
-h1 { font-weight: 700; }
-h2 { font-weight: 600; }
+
 
 /* Navbar + buttons also use Montserrat for consistency */
 .w3-bar,
