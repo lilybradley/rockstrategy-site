@@ -259,20 +259,20 @@ html, body {
   /* keep existing base sizes from W3; no change needed */
 }
 
-/* Headings use Poppins for a modern, friendly look */
+/* Headings use Montserrat for a clean, modern, geometric look */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", "DM Sans", "Helvetica Neue", Arial, sans-serif;
   /* W3 sets 400 by default; bump key levels a bit for hierarchy */
   font-weight: 500;
 }
 h1 { font-weight: 700; }
 h2 { font-weight: 600; }
 
-/* Navbar + buttons also use Poppins for consistency */
+/* Navbar + buttons also use Montserrat for consistency */
 .w3-bar,
 .w3-bar .w3-bar-item,
 .w3-button {
-  font-family: "Poppins", "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", "DM Sans", "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 0.2px; /* subtle polish */
 }
 
