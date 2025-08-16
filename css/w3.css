@@ -249,3 +249,30 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+/* ==== Rock Strategy — Typography overrides ==== */
+
+/* Body text: DM Sans (clean, rounded) */
+html, body {
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* keep existing base sizes from W3; no change needed */
+}
+
+/* Headings use Poppins for a modern, friendly look */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  /* W3 sets 400 by default; bump key levels a bit for hierarchy */
+  font-weight: 500;
+}
+h1 { font-weight: 700; }
+h2 { font-weight: 600; }
+
+/* Navbar + buttons also use Poppins for consistency */
+.w3-bar,
+.w3-bar .w3-bar-item,
+.w3-button {
+  font-family: "Poppins", "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px; /* subtle polish */
+}
+
