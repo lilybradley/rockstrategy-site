@@ -250,20 +250,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-/* ==== Rock Strategy — Typography overrides ==== */
+/* ==== Rock Strategy — Overrides ==== */
+
+/* Headings use Montserrat for a clean, modern, geometric look */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
 
 /* Body text: DM Sans (clean, rounded) */
-html, body {
+html, body, p, li, a, span, div {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 0.2px; 
   /* keep existing base sizes from W3; no change needed */
 }
-
-/* Headings use Montserrat for a clean, modern, geometric look */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "DM Sans", "Helvetica Neue", Arial, sans-serif;
-
 
 /* Navbar + buttons also use Montserrat for consistency */
 .w3-bar,
@@ -273,3 +275,37 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.2px; /* subtle polish */
 }
 
+/* Hero headline — always Montserrat */
+.hero-overlap {
+  font-family: 'Montserrat', sans-serif; /* force Montserrat */
+  font-weight: 500;                      
+  /* Responsive size: grows on large screens, shrinks on small */
+  font-size: clamp(1.4rem, 6vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+/* Optional: subtitle directly under hero headline */
+.hero-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.95rem, 3.2vw, 1.5rem);
+  line-height: 1.35;
+  color: #dddddd; /* soft contrast on photos */
+  margin-top: 8px;
+}
+
+/* Small helpers to avoid text being cut off on mobile */
+.hero-wrap {
+  max-width: 90vw;      /* keep long titles inside the viewport */
+  padding: 0 12px;      /* breathing room on tiny screens */
+  margin: 0 auto;       /* center the block */
+  text-wrap: balance;   /* modern browsers: nicer line breaks */
+}
+
+/* Extra safety for very small phones */
+@media (max-width: 360px) {
+  .hero-overlap { font-size: clamp(1.2rem, 7vw, 2.2rem); }
+  .hero-sub     { font-size: clamp(0.85rem, 3.8vw, 1.25rem); }
+}
